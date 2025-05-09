@@ -463,6 +463,20 @@ body {
     text-align: center;
 }
 
+.powered-by strong {
+    color: var(--white);
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.powered-by .powered-x {
+    color: var(--accent-color);
+    font-weight: 900;
+    margin: 0 10px;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
+
 .powered-by a {
     color: var(--white);
     font-weight: 800;
@@ -484,6 +498,10 @@ body {
 @media (max-width: 768px) {
     .powered-by p, .powered-by a {
         font-size: 1.15rem;
+    }
+    .powered-by .powered-x {
+        font-size: 1.1em;
+        margin: 0 6px;
     }
 }
 
