@@ -110,20 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize when DOM is loaded
     mobileMenuToggle();
 
-    // Add loading animation to practice area cards
-    const practiceCards = document.querySelectorAll('.practice-card');
-    practiceCards.forEach((card, index) => {
-        card.style.animationDelay = `${index * 0.1}s`;
-        card.classList.add('scroll-reveal');
-    });
-
-    // Add loading animation to value items
-    const valueItems = document.querySelectorAll('.value-item');
-    valueItems.forEach((item, index) => {
-        item.style.animationDelay = `${index * 0.2}s`;
-        item.classList.add('scroll-reveal');
-    });
-
     // Objectives section animation
     const objectiveCards = document.querySelectorAll('.objective-card');
     
@@ -142,4 +128,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', checkObjectives);
     window.addEventListener('load', checkObjectives);
+
+    // See More for Practice Areas
+    const seeMoreBtn = document.getElementById('seeMorePractice');
+    const practiceGrid = document.querySelector('.practice-grid');
+    let expanded = false;
+    if (seeMoreBtn && practiceGrid) {
+        seeMoreBtn.addEventListener('click', function() {
+            expanded = !expanded;
+            practiceGrid.classList.toggle('show-extra', expanded);
+            seeMoreBtn.textContent = expanded ? 'See Less' : 'See More';
+        });
+    }
 }); 

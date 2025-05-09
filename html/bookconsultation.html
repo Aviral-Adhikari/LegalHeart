@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Consultation | Legal Heart</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bookconsultation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section (same as contact.html) -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/legalheartlogo.png" alt="Legal Heart Logo">
+                <span class="brand-name">Legal Heart</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#about">About Us <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#about">About Legal Heart</a></li>
+                            <li><a href="aboutlawyer.html">Lawyers in Legal Heart</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="practiceareas.html">Practice Areas</a></li>
+                    <li><a href="blogs.htmlr">Blog</a></li>
+                    
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="bookconsultation.html" class="cta-button">Book Consultation</a>
+        </div>
+    </header>
+
+    <main class="consultation-section" style="margin-top:100px;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Book a Consultation</h2>
+                <p>Schedule a meeting with our legal experts</p>
+            </div>
+            <div class="consultation-grid">
+                <div class="consultation-form-wrapper">
+                    <!-- Book Consultation Form using Formspree -->
+                    <form action="https://formspree.io/f/xeogzqwr" method="POST" class="consultation-form" id="consultationForm">
+                        <div class="form-group">
+                            <label for="fullname">Full Name:</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="fullname" name="fullname" placeholder="Your Full Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-phone"></i>
+                                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date you want to meet:</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-calendar-alt"></i>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time you want to meet:</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-clock"></i>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+                        <div class="form-group advocate-select-group">
+                            <label for="advocate">Select Advocate:</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user-tie"></i>
+                                <select id="advocate" name="advocate" required>
+                                    <option value="">-- Select Advocate --</option>
+                                    <option value="Arjun Adhikari">Arjun Adhikari</option>
+                                    <option value="Krishna Prashad Subedi">Krishna Prashad Subedi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Short Message <span style="color:var(--accent-color);font-size:0.95em;">(Why you want to meet and for what case...)</span>:</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-comment"></i>
+                                <textarea id="message" name="message" placeholder="Please mention the reason for your meeting and the case details." required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="cta-button">Send</button>
+                    </form>
+                </div>
+                <div class="consultation-info">
+                    <div class="why-book-block">
+                        <h3><i class="fas fa-briefcase"></i> Why Book a Consultation?</h3>
+                        <ul class="why-book-list">
+                            <li><i class="fas fa-user-check"></i> Personalized Legal Advice</li>
+                            <li><i class="fas fa-lock"></i> Confidential & Secure</li>
+                            <li><i class="fas fa-calendar-alt"></i> Flexible Scheduling</li>
+                            <li><i class="fas fa-gavel"></i> Expert Legal Team</li>
+                            <li><i class="fas fa-globe-asia"></i> Local Expertise</li>
+                            <li><i class="fas fa-users"></i> Client-Focused</li>
+                            <li><i class="fas fa-star"></i> Proven Track Record</li>
+                        </ul>
+                        <div class="why-book-cta redesigned-cta">
+                            <div class="cta-content">
+                                <div class="cta-icon"><i class="fas fa-lightbulb"></i></div>
+                                <div class="cta-text">
+                                    <h4>Take the First Step</h4>
+                                    <p>Don't let legal confusion cost you time, money, or peace of mind.<br>
+                                    <b>Book your consultation today and move forward with clarity.</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="consult-steps">
+                            <div class="step"><span>1. Submit The Form</span></div>
+                            <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                            <div class="step"><span>2. Confirmation</span></div>
+                            <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                            <div class="step"><span>3. Meet Your Advocate</span></div>
+                            <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                            <div class="step"><span>4. Get Legal Guidance</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Legal Expert Team Section -->
+    <section class="expert-team-section">
+        <div class="expert-bg-anim"></div>
+        <div class="container">
+            <div class="expert-team-card">
+                <div class="expert-team-icon"><i class="fas fa-balance-scale"></i></div>
+                <div class="expert-team-content">
+                    <h3>Meet Our Legal Expert Team</h3>
+                    <p>Our experienced advocates are here to guide you every step of the way. Discover their expertise and dedication to your case.</p>
+                    <a href="aboutlawyer.html" class="cta-button expert-team-btn">See Our Team <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animated Background Elements -->
+    <div class="consult-bg-anim consult-bg-anim-1"></div>
+    <div class="consult-bg-anim consult-bg-anim-2"></div>
+
+    <!-- Footer (same as contact.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../images/legalheartlogo.png" alt="Legal Heart Logo">
+                    <p>Compassionate legal support with heart</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#practice">Practice Areas</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Legal Heart. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Disclaimer</a>
+                </div>
+                <div class="powered-by">
+                    <p>Powered by</p>
+                    <a href="https://ifihustle.com" target="_blank">
+                        <img src="../images/ifihustle.png" alt="iFiHustle Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/bookconsultation.js"></script>
+</body>
+</html>

@@ -46,10 +46,11 @@
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .form-container {
@@ -144,53 +145,229 @@
     opacity: 0;
     transform: translateX(20px);
     animation: slideIn 1s ease forwards 0.3s;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .info-card {
     background: var(--background-color);
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     height: 100%;
 }
 
-.info-card h3 {
+.info-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.info-header h3 {
     color: var(--primary-color);
-    margin-bottom: 30px;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
     font-family: 'Playfair Display', serif;
+}
+
+.info-header p {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.info-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.info-main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-secondary {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .info-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 25px;
+    gap: 20px;
+    padding: 25px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background: var(--light-gray);
 }
 
-.info-item i {
-    color: var(--accent-color);
-    font-size: 1.2rem;
-    margin-right: 15px;
-    margin-top: 5px;
+.info-item.primary {
+    background: var(--primary-color);
+    color: var(--background-color);
+    position: relative;
+    overflow: hidden;
 }
 
-.info-item h4 {
+.info-item.primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(209, 161, 95, 0.1), transparent);
+    pointer-events: none;
+}
+
+.info-item.primary h4,
+.info-item.primary p,
+.info-item.primary a {
+    color: var(--background-color);
+}
+
+.info-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-item.primary .icon-wrapper {
+    background: var(--accent-color);
     color: var(--primary-color);
-    margin-bottom: 5px;
+    box-shadow: 0 4px 15px rgba(209, 161, 95, 0.3);
 }
 
-.info-item p {
+.info-item.primary:hover .icon-wrapper {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(209, 161, 95, 0.4);
+}
+
+.info-item.consultation {
+    background: linear-gradient(135deg, var(--primary-color), #1a2c4f);
+}
+
+.consultation-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--accent-color);
+    color: var(--primary-color);
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(209, 161, 95, 0.2);
+}
+
+.consultation-btn i {
+    transition: transform 0.3s ease;
+}
+
+.consultation-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(209, 161, 95, 0.3);
+}
+
+.consultation-btn:hover i {
+    transform: translateX(5px);
+}
+
+.icon-wrapper {
+    background: var(--accent-color);
+    color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.info-item:hover .icon-wrapper {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(209, 161, 95, 0.2);
+}
+
+.info-details {
+    flex-grow: 1;
+}
+
+.info-details h4 {
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.info-details p {
     color: var(--text-color);
     line-height: 1.6;
+    margin-bottom: 10px;
 }
 
-.info-item a {
+.info-details a {
     color: var(--text-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.info-item a:hover {
+.info-details a:hover {
     color: var(--accent-color);
+}
+
+.direction-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent-color) !important;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.direction-link i {
+    transition: transform 0.3s ease;
+}
+
+.direction-link:hover i {
+    transform: translateX(5px);
+}
+
+.availability {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    margin-top: 5px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-link {
+    background: var(--primary-color);
+    color: var(--background-color);
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: var(--accent-color);
+    color: var(--primary-color);
+    transform: translateY(-3px);
 }
 
 /* Google Form Section */
@@ -227,7 +404,7 @@
 
 /* Map Section */
 .map-section {
-    padding: 80px 0;
+    padding: 40px 0 80px 0;
     background-color: var(--light-gray);
 }
 
@@ -237,6 +414,7 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
 }
 
 /* WhatsApp Button */
@@ -290,12 +468,22 @@
 @media (max-width: 992px) {
     .contact-grid {
         grid-template-columns: 1fr;
+        gap: 30px;
     }
 
     .form-container,
     .contact-info {
         max-width: 700px;
         margin: 0 auto;
+    }
+
+    .info-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .info-card {
+        padding: 40px;
     }
 }
 
@@ -311,6 +499,22 @@
     }
 
     .google-form-container {
+        padding: 20px;
+    }
+
+    .map-container {
+        padding: 0 15px;
+    }
+
+    .info-card {
+        padding: 30px;
+    }
+    
+    .info-header h3 {
+        font-size: 1.8rem;
+    }
+    
+    .info-item {
         padding: 20px;
     }
 }
@@ -338,6 +542,47 @@
     .whatsapp-btn {
         width: 50px;
         height: 50px;
-        font-size: 25px;
+        bottom: 20px;
+        right: 20px;
     }
+
+    .info-card {
+        padding: 20px;
+    }
+    
+    .info-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .info-header p {
+        font-size: 1rem;
+    }
+    
+    .info-item {
+        padding: 15px;
+    }
+    
+    .icon-wrapper {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+}
+
+.info-item.primary .icon-wrapper i,
+.info-item.consultation .icon-wrapper i {
+    color: #fff !important;
+    font-size: 1.7em;
+}
+
+/* Optionally, ensure all .icon-wrapper uses flex to center icons */
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-item .icon-wrapper i {
+    color: #fff !important;
+    font-size: 1.7em;
 } 
