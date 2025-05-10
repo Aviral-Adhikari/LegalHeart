@@ -1,5 +1,68 @@
 /* blogs.css - Client Blogs Section, Legal Heart Theme */
 
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 54, 93, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    padding: 0 20px;
+}
+
+.hero-overlay h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-overlay p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 300px;
+    }
+    
+    .hero-overlay h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-overlay p {
+        font-size: 1rem;
+    }
+}
+
 .blogs-section {
     padding: 60px 0 40px 0;
     background: var(--light-gray);
