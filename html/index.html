@@ -7,6 +7,27 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Horizontal dropdown for About Us */
+        .main-nav .dropdown-menu {
+            display: flex;
+            flex-direction: row;
+            min-width: 320px;
+            justify-content: center;
+            align-items: stretch;
+            padding: 0.5rem 0;
+        }
+        .main-nav .dropdown-menu li {
+            flex: 1 1 0;
+            text-align: center;
+            margin: 0 0.5rem;
+            white-space: nowrap;
+        }
+        .main-nav .dropdown-menu li a {
+            display: block;
+            padding: 0.75rem 1.5rem;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -23,7 +44,7 @@
                         <a href="#about">About Us <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="aboutus.html">About Legal Heart</a></li>
-                            <li><a href="aboutlawyer.html">Lawyers in Legal Heart</a></li>
+                            <li><a href="aboutlawyer.html">About Lawyers in Legal Heart</a></li>
                         </ul>
                     </li>
                     <li><a href="practiceareas.html">Practice Areas</a></li>

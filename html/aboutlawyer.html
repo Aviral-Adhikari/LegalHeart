@@ -8,6 +8,56 @@
     <link rel="stylesheet" href="../css/lawyer-profile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .lawyer-boxes {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .lawyer-box {
+            width: 300px;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .lawyer-box:hover {
+            transform: translateY(-5px);
+        }
+        .lawyer-box img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+        .lawyer-box h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        .lawyer-box p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        .lawyer-box .cta-button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .lawyer-profile {
+            display: none;
+        }
+        .lawyer-profile.active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -43,11 +93,27 @@
         </div>
     </section>
 
+    <!-- Lawyer Boxes Section -->
+    <section class="lawyer-boxes">
+        <div class="lawyer-box" onclick="showLawyerProfile('lawyer1')">
+            <img src="../images/arjun.jpeg" alt="Advocate Arjun Adhikari">
+            <h3>Advocate Arjun Adhikari</h3>
+            <p>Family Law | Human Rights | Corporate Law</p>
+            <span class="cta-button">See More</span>
+        </div>
+        <div class="lawyer-box" onclick="showLawyerProfile('lawyer2')">
+            <img src="../images/krishna.jpg" alt="Advocate Krishna">
+            <h3>Senior Advocate Krishna Prasad Subedi</h3>
+            <p>Criminal Defense | Immigration Law | Property Law</p>
+            <span class="cta-button">See More</span>
+        </div>
+    </section>
+
     <!-- Lawyers Section -->
     <section class="lawyers-section">
         <div class="container">
             <!-- Lawyer 1 -->
-            <div class="lawyer-profile">
+            <div id="lawyer1" class="lawyer-profile">
                 <div class="lawyer-image">
                     <img src="../images/arjun.jpeg" alt="Advocate Arjun Adhikari">
                     <div class="lawyer-overlay">
@@ -107,9 +173,9 @@
             </div>
 
             <!-- Lawyer 2 -->
-            <div class="lawyer-profile">
+            <div id="lawyer2" class="lawyer-profile">
                 <div class="lawyer-image">
-                    <img src="../images/lawyer2.jpg" alt="Advocate Krishna">
+                    <img src="../images/krishna.jpg" alt="Advocate Krishna">
                     <div class="lawyer-overlay">
                         <div class="social-links">
                             <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -120,7 +186,7 @@
                     </div>
                 </div>
                 <div class="lawyer-info">
-                    <h2>Advocate Krishna</h2>
+                    <h2>Senior Advocate Krishna Prasad Subedi</h2>
                     <p class="title">Senior Advocate</p>
                     <div class="practice-areas">
                         <span>Criminal Defense</span>
@@ -212,5 +278,21 @@
 
     <script src="../scripts/main.js"></script>
     <script src="../scripts/lawyer-profile.js"></script>
+    <script>
+        function showLawyerProfile(lawyerId) {
+            // Hide all lawyer profiles
+            document.querySelectorAll('.lawyer-profile').forEach(profile => {
+                profile.classList.remove('active');
+            });
+            
+            // Show the selected lawyer profile
+            document.getElementById(lawyerId).classList.add('active');
+            
+            // Scroll to the profile section
+            document.querySelector('.lawyers-section').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+    </script>
 </body>
 </html> 
