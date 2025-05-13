@@ -20,7 +20,13 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutus.html" class="active">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">About <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="aboutus.html" class="active">About Us</a></li>
+                            <li><a href="aboutlawyers.html">About Lawyers</a></li>
+                        </ul>
+                    </li>
                     <li><a href="practiceareas.html">Practice Areas</a></li>
                     <li><a href="blogs.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -30,66 +36,93 @@
         </div>
     </header>
 
-    <!-- Modern Animated Hero Section -->
-    <section class="about-hero-modern">
-        <div class="about-hero-bg-modern">
-            <span class="floating-icon"><i class="fas fa-gavel"></i></span>
-            <span class="floating-icon"><i class="fas fa-balance-scale"></i></span>
-            <span class="floating-icon"><i class="fas fa-heart"></i></span>
-            <span class="floating-icon"><i class="fas fa-handshake"></i></span>
-        </div>
-        <div class="about-hero-content-modern">
-            <img src="../images/legalheartlogo.png" alt="Legal Heart Logo" class="about-logo-modern">
-            <h1><i class="fas fa-balance-scale"></i> About Us</h1>
-            <p class="about-tagline-modern">With Heart, For Justice. Your Trusted Legal Partner in Nepal.</p>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-banner">
+            <img src="../images/heroservice.svg" alt="Legal Services" class="hero-image">
+            <div class="hero-overlay">
+                <h1>About Legal Heart</h1>
+                <p>Your Trusted Legal Partner in Nepal</p>
+            </div>
         </div>
     </section>
 
-    <!-- Glassmorphism About Card Section -->
-    <section class="about-section-modern">
-        <div class="about-content-modern">
-            <div class="about-card-modern">
-                <div class="about-icons-modern">
-                    <span class="about-icon-modern"><i class="fas fa-gavel"></i></span>
-                    <span class="about-icon-modern"><i class="fas fa-users"></i></span>
-                    <span class="about-icon-modern"><i class="fas fa-handshake"></i></span>
-                    <span class="about-icon-modern"><i class="fas fa-heart"></i></span>
+    <!-- Story Section -->
+    <section class="story-section">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2>Our Story</h2>
+                    <p>Founded by Senior Advocate Krishna Prashad Subedi and Advocate Arjun Adhikari, Legal Heart has grown from a small practice to one of Nepal's most respected law firms. Our journey is marked by a commitment to excellence, integrity, and client success.</p>
+                    <p>We believe in the power of justice and the importance of accessible legal services. Every case we handle is approached with the same dedication and attention to detail, regardless of its size or complexity.</p>
                 </div>
-                <h2>Legal Heart Pvt. Ltd.</h2>
-                <p>
-                    Legal Heart Pvt. Ltd. is a distinguished law firm based in Nepal, built on a foundation of trust, experience, and an unwavering commitment to justice. Our mission is to provide comprehensive, high-quality legal services that meet the evolving needs of our clients—whether individuals, businesses, or institutions.
-                </p>
-                <div class="about-founders-modern">
-                    <div class="founder-modern">
-                        <i class="fas fa-user-tie"></i>
-                        <span>Senior Advocate Krishna Prashad Subedi</span>
-                    </div>
-                    <div class="founder-modern">
-                        <i class="fas fa-user-tie"></i>
-                        <span>Advocate Arjun Adhikari</span>
-                    </div>
+                <div class="story-image">
+                    <img src="../images/legalheartlogo.png" alt="Legal Heart Office">
                 </div>
-                <p>
-                    The firm was established by two of Nepal's most experienced and respected legal professionals—Senior Advocate Krishna Prashad Subedi and Advocate Arjun Adhikari. With decades of practice in the legal field, both founders bring extensive expertise in a broad range of areas including civil and criminal litigation, constitutional law, corporate advisory, family disputes, and alternative dispute resolution. Their leadership, insight, and ethical standards have helped shape Legal Heart into a firm known for its reliability, strategic thinking, and results-driven approach.
-                </p>
-                <p>
-                    At Legal Heart, we understand that every case is more than just a legal file—it represents real people, real stakes, and real challenges. That's why we take a personalized approach to each matter, ensuring careful attention to detail, clear communication, and a deep understanding of our clients' goals.
-                </p>
-                <div class="about-values-modern">
-                    <div class="value-modern"><i class="fas fa-scale-balanced"></i> Upholding the rule of law</div>
-                    <div class="value-modern"><i class="fas fa-shield-alt"></i> Protecting client rights</div>
-                    <div class="value-modern"><i class="fas fa-hands-holding"></i> Diligence & Empathy</div>
-                    <div class="value-modern"><i class="fas fa-star"></i> Excellence in Service</div>
-                </div>
-                <p>
-                    Our team is committed to upholding the rule of law and protecting the rights of our clients with diligence, empathy, and excellence. Whether you are facing a legal dispute, planning a business venture, or seeking preventive legal advice, Legal Heart Pvt. Ltd. stands ready to support you every step of the way.
-                </p>
-                <blockquote class="about-quote-modern">
-                    <i class="fas fa-quote-left"></i>
-                    We don't just represent the law—we represent you, with heart.
-                    <i class="fas fa-quote-right"></i>
-                </blockquote>
             </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2>Meet Our Leadership</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="../images/arjun.jpg" alt="Senior Advocate Krishna Prashad Subedi">
+                    </div>
+                    <h3>Senior Advocate Krishna Prashad Subedi</h3>
+                    <p class="member-role">Founding Partner</p>
+                    <p class="member-bio">With over 20 years of experience in constitutional and corporate law, Krishna leads our firm with wisdom and vision.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="../images/arjun.jpg" alt="Advocate Arjun Adhikari">
+                    </div>
+                    <h3>Advocate Arjun Adhikari</h3>
+                    <p class="member-role">Founding Partner</p>
+                    <p class="member-bio">Specializing in civil litigation and family law, Arjun brings compassion and expertise to every case.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <h2>Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Integrity</h3>
+                    <p>We uphold the highest ethical standards in all our dealings.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Client Focus</h3>
+                    <p>Your success is our priority. We're committed to understanding your needs.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-gavel"></i>
+                    <h3>Excellence</h3>
+                    <p>We strive for excellence in every aspect of our legal practice.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Compassion</h3>
+                    <p>We approach every case with empathy and understanding.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            <p>Let's discuss how we can help you with your legal needs.</p>
+            <a href="bookconsultation.html" class="cta-button">Schedule a Consultation</a>
         </div>
     </section>
 
