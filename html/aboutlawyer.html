@@ -3,61 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Lawyers - Legal Heart</title>
+    <title>About Lawyers - Legal Heart</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/lawyer-profile.css">
+    <link rel="stylesheet" href="../css/aboutlawyer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        .lawyer-boxes {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-        .lawyer-box {
-            width: 300px;
-            padding: 2rem;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .lawyer-box:hover {
-            transform: translateY(-5px);
-        }
-        .lawyer-box img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 1rem;
-            object-fit: cover;
-        }
-        .lawyer-box h3 {
-            margin-bottom: 0.5rem;
-            color: #333;
-        }
-        .lawyer-box p {
-            color: #666;
-            margin-bottom: 1rem;
-        }
-        .lawyer-box .cta-button {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background: #2c3e50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .lawyer-profile {
-            display: none;
-        }
-        .lawyer-profile.active {
-            display: block;
-        }
-    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -65,6 +16,7 @@
         <div class="container">
             <div class="logo">
                 <img src="../images/legalheartlogo.png" alt="Legal Heart Logo">
+                <span class="brand-name">Legal Heart</span>
             </div>
             <nav class="main-nav">
                 <ul>
@@ -81,15 +33,78 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <a href="bookconsultation.html" class="cta-button">Book a Free Consultation</a>
+            <a href="bookconsultation.html" class="cta-button">Book Consultation</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="lawyer-hero">
+    <section id="home" class="hero">
+        <div class="hero-shape"></div>
+        <div class="hero-dots"></div>
         <div class="container">
-            <h1>Meet Our Legal Experts</h1>
-            <p>Dedicated professionals committed to your legal success</p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-balance-scale"></i>
+                        Our Legal Team
+                    </div>
+                    <h1>Expert Legal Minds at Your Service</h1>
+                    <div class="hero-highlight">
+                        <span class="highlight-text">Specialized</span>
+                        <span class="highlight-text">Experienced</span>
+                        <span class="highlight-text">Dedicated</span>
+                    </div>
+                    <p class="hero-subtitle">Meet the professionals who will handle your case with expertise and care</p>
+                    <div class="lawyer-preview">
+                        <div class="preview-item">
+                            <img src="../images/arjun.jpeg" alt="Advocate Arjun">
+                            <div class="preview-info">
+                                <h4>Advocate Arjun Adhikari</h4>
+                                <p>Family Law Expert</p>
+                            </div>
+                        </div>
+                        <div class="preview-item">
+                            <img src="../images/krishna.jpg" alt="Advocate Krishna">
+                            <div class="preview-info">
+                                <h4>Advocate Krishna</h4>
+                                <p>Criminal Law Specialist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#lawyer-profiles" class="cta-button primary">
+                            <i class="fas fa-user-tie"></i>
+                            View All Lawyers
+                            <span class="button-shine"></span>
+                        </a>
+                        <a href="bookconsultation.html" class="cta-button secondary">
+                            <i class="fas fa-calendar-check"></i>
+                            Book a Meeting
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-image">
+                        <img src="../images/team.png" alt="Legal Heart Team">
+                        <div class="image-overlay"></div>
+                        <div class="image-decoration"></div>
+                    </div>
+                    <div class="expertise-badges">
+                        <div class="expertise-badge">
+                            <i class="fas fa-gavel"></i>
+                            <span>15+ Years Combined Experience</span>
+                        </div>
+                        <div class="expertise-badge">
+                            <i class="fas fa-users"></i>
+                            <span>1000+ Clients Served</span>
+                        </div>
+                        <div class="expertise-badge">
+                            <i class="fas fa-trophy"></i>
+                            <span>98% Success Rate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -110,7 +125,7 @@
     </section>
 
     <!-- Lawyers Section -->
-    <section class="lawyers-section">
+    <section id="lawyer-profiles" class="lawyers-section">
         <div class="container">
             <!-- Lawyer 1 -->
             <div id="lawyer1" class="lawyer-profile">
@@ -237,62 +252,63 @@
 
     <!-- Footer -->
     <footer class="footer">
+        <div class="footer-shape"></div>
+        <div class="footer-pattern"></div>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="../images/legalheartlogo.png" alt="Legal Heart Logo">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="../images/legalheartlogo.png" alt="Legal Heart Logo">
+                    </div>
                     <p>Compassionate legal support with heart</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#practice">Practice Areas</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h4>Follow Us</h4>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="powered-by">
-                    <p>Powered by <strong>TechPalx</strong><span class="powered-x">x</span><strong>iFiHustle</strong></p>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="practiceareas.html">Practice Areas</a></li>
+                            <li><a href="blogs.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Practice Areas</h4>
+                        <ul>
+                            <li><a href="#">Family Law</a></li>
+                            <li><a href="#">Criminal Law</a></li>
+                            <li><a href="#">Corporate Law</a></li>
+                            <li><a href="#">Immigration Law</a></li>
+                            <li><a href="#">Property Law</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="bookconsultation.html">Book Consultation</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Legal Heart. All rights reserved.</p>
-                <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Disclaimer</a>
-                </div>
+                <p>&copy; 2024 Legal Heart. All rights reserved.</p>
+                <p class="powered-by">Powered by <a href="#">Legal Heart</a></p>
             </div>
         </div>
     </footer>
 
     <script src="../scripts/main.js"></script>
     <script src="../scripts/lawyer-profile.js"></script>
-    <script>
-        function showLawyerProfile(lawyerId) {
-            // Hide all lawyer profiles
-            document.querySelectorAll('.lawyer-profile').forEach(profile => {
-                profile.classList.remove('active');
-            });
-            
-            // Show the selected lawyer profile
-            document.getElementById(lawyerId).classList.add('active');
-            
-            // Scroll to the profile section
-            document.querySelector('.lawyers-section').scrollIntoView({ 
-                behavior: 'smooth' 
-            });
-        }
-    </script>
+    <script src="../scripts/aboutlawyer.js"></script>
 </body>
 </html> 

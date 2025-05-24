@@ -28,6 +28,365 @@
             display: block;
             padding: 0.75rem 1.5rem;
         }
+
+        /* Contact Info Section Styles */
+        .contact-form-section {
+            position: relative;
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            overflow: hidden;
+            color: #2c3e50;
+        }
+
+        .section-shape {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(0,0,0,0.02) 0%, rgba(0,0,0,0) 100%);
+            z-index: 1;
+        }
+
+        .section-dots {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(rgba(0,0,0,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.3;
+            z-index: 1;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+
+        .section-badge i {
+            color: #2c3e50;
+            font-size: 1.2em;
+        }
+
+        .section-badge span {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .section-header h2 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+
+        .contact-grid {
+            position: relative;
+            z-index: 2;
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-decoration {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(45deg, rgba(44,62,80,0.05) 0%, rgba(44,62,80,0) 100%);
+            border-radius: 50%;
+            transform: translate(30%, -30%);
+        }
+
+        .info-main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .info-item {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .info-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .info-item.primary {
+            background: white;
+            border: 1px solid rgba(0,0,0,0.07);
+            box-shadow: 0 2px 8px rgba(44,62,80,0.03);
+        }
+
+        .icon-wrapper {
+            width: 50px;
+            height: 50px;
+            background: #d1a15f;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .icon-wrapper i {
+            color: #fff;
+            font-size: 1.5em;
+        }
+
+        .info-details h4 {
+            color: #223046 !important;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .info-details p, .info-details a {
+            color: #2c3e50 !important;
+            font-size: 1.08em;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+        }
+
+        .info-details a {
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .info-details a:hover {
+            color: #d1a15f !important;
+        }
+
+        .direction-link, .consultation-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 600;
+            position: relative;
+            padding: 8px 0;
+        }
+
+        .direction-link:hover, .consultation-btn:hover {
+            color: #2c3e50;
+        }
+
+        .link-shine, .button-shine {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #2c3e50, transparent);
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .direction-link:hover .link-shine,
+        .consultation-btn:hover .button-shine {
+            transform: translateX(100%);
+        }
+
+        .info-secondary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: #f8f9fa;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2c3e50;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: #2c3e50;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .availability {
+            color: #2c3e50;
+            font-size: 0.95em;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .info-main, .info-secondary {
+                grid-template-columns: 1fr;
+            }
+            
+            .info-card {
+                padding: 20px;
+            }
+            
+            .section-header h2 {
+                font-size: 2em;
+            }
+        }
+
+        .contact-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 32px;
+            margin-top: 40px;
+        }
+        .contact-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(44,62,80,0.07);
+            padding: 32px 28px 28px 28px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .contact-card:hover {
+            box-shadow: 0 8px 32px rgba(44,62,80,0.13);
+            transform: translateY(-4px) scale(1.02);
+        }
+        .card-icon, .card-icon-main {
+            width: 54px;
+            height: 54px;
+            border-radius: 14px;
+            background: #f8f6f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.7em;
+            color: #d1a15f;
+            margin-bottom: 18px;
+        }
+        .card-icon-main {
+            background: linear-gradient(135deg, #d1a15f 60%, #fffbe6 100%);
+            color: #fff;
+            box-shadow: 0 2px 12px rgba(209,161,95,0.13);
+        }
+        .contact-card h3, .contact-card h4 {
+            color: #223046;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .contact-card p, .contact-card a, .contact-card span {
+            color: #2c3e50;
+            font-size: 1.08em;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .contact-card .cta-button.primary {
+            background: #d1a15f;
+            color: #fff;
+            border-radius: 8px;
+            padding: 10px 22px;
+            font-weight: 600;
+            margin-top: 10px;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+        }
+        .contact-card .cta-button.primary:hover {
+            background: #b88a4c;
+            color: #fff;
+        }
+        .direction-link {
+            color: #d1a15f;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 6px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .direction-link:hover {
+            text-decoration: underline;
+            color: #b88a4c;
+        }
+        .availability {
+            color: #223046;
+            font-size: 0.97em;
+            font-style: italic;
+            margin-top: 4px;
+        }
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 8px;
+        }
+        .social-link {
+            width: 38px;
+            height: 38px;
+            background: #f8f6f2;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #d1a15f;
+            font-size: 1.2em;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+        }
+        .social-link:hover {
+            background: #d1a15f;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        @media (max-width: 900px) {
+            .contact-cards-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 600px) {
+            .contact-cards-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-card {
+                padding: 22px 12px 18px 12px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -57,93 +416,152 @@
         </div>
     </header>
 
-    <!-- Contact Hero Section -->
-    <section class="contact-hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-shape"></div>
+        <div class="hero-dots"></div>
         <div class="container">
-            <h1>Contact Us</h1>
-            <p>We're here to listen and help you navigate your legal journey with clarity and care.</p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 Legal Support</span>
+                    </div>
+                    <h1>Contact Legal Heart</h1>
+                    <div class="hero-highlight">
+                        <span class="highlight-text">Expert Guidance</span>
+                        <span class="highlight-text">Personalized Support</span>
+                        <span class="highlight-text">Quick Response</span>
+                    </div>
+                    <p class="hero-subtitle">Your trusted partner in legal matters</p>
+                    <p class="hero-description">Connect with our experienced legal professionals for personalized assistance and expert guidance. We're here to help you navigate your legal journey with confidence.</p>
+                    <div class="hero-buttons">
+                        <a href="bookconsultation.html" class="cta-button primary">
+                            <i class="fas fa-envelope"></i>
+                            Book Consultation
+                            <span class="button-shine"></span>
+                        </a>
+                        <a href="bookconsultation.html" class="cta-button secondary">
+                            <i class="fas fa-calendar-check"></i>
+                            Book Consultation
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Support</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="fas fa-phone"></i></div>
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Constructive Suggestions</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-image">
+                        <img src="../images/contact.gif" alt="Contact Legal Heart" style="width: 100%; height: auto; max-width: 500px; object-fit: contain; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <div class="image-overlay"></div>
+                        <div class="image-decoration"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <div class="badge-icon"><i class="fas fa-star"></i></div>
+                        <div class="badge-content">
+                            <span class="years">15+</span>
+                            <span class="text">Years of Excellence</span>
+                        </div>
+                    </div>
+                    <div class="trust-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Trusted by 1000+ Clients</span>
+                    </div>
+                    <div class="success-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>98% Success Rate</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact Info Section -->
     <section class="contact-form-section">
+        <div class="section-shape"></div>
+        <div class="section-dots"></div>
         <div class="container">
-            <div class="contact-grid">
-                <!-- Contact Info -->
-                <div class="contact-info">
-                    <div class="info-card">
-                        <div class="info-header">
-                            <h3>Get in Touch</h3>
-                            <p>We're here to help and answer any questions you might have</p>
-                        </div>
-                        <div class="info-content">
-                            <div class="info-main">
-                                <div class="info-item primary">
-                                    <div class="icon-wrapper">
-                                        <i class="fas fa-building"></i>
-                                    </div>
-                                    <div class="info-details">
-                                        <h4>Visit Our Office</h4>
-                                        <p>Legal Heart Pvt Ltd<br>Maitighar Mandala, Kathmandu, Nepal</p>
-                                        <a href="#" class="direction-link">Get Directions <i class="fas fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                                <div class="info-item primary">
-                                    <div class="icon-wrapper">
-                                        <i class="fas fa-headset"></i>
-                                    </div>
-                                    <div class="info-details">
-                                        <h4>Call Us</h4>
-                                        <p><a href="tel:+9779851097285">+977 9800000000</a></p>
-                                        <span class="availability">Available 24/7 for urgent matters</span>
-                                    </div>
-                                </div>
-                                <div class="info-item primary consultation">
-                                    <div class="icon-wrapper">
-                                        <i class="fas fa-gavel"></i>
-                                    </div>
-                                    <div class="info-details">
-                                        <h4>Need Legal Consultation?</h4>
-                                        <p>Book a consultation with our expert lawyers</p>
-                                        <a href="bookconsultation.html" class="consultation-btn">Book Consultation <i class="fas fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info-secondary">
-                                <div class="info-item">
-                                    <div class="icon-wrapper">
-                                        <i class="fas fa-envelope-open-text"></i>
-                                    </div>
-                                    <div class="info-details">
-                                        <h4>Email Us</h4>
-                                        <p><a href="mailto:legalheartsupport@gmail.com">legalheartsupport@gmail.com</a></p>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="icon-wrapper">
-                                        <i class="fas fa-calendar-check"></i>
-                                    </div>
-                                    <div class="info-details">
-                                        <h4>Office Hours</h4>
-                                        <p>Sunday - Friday: 9:00 AM - 5:00 PM<br>Saturday (On Special Request): 11:00 AM - 3:00 PM</p>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <div class="icon-wrapper">
-                                        <i class="fas fa-share-alt"></i>
-                                    </div>
-                                    <div class="info-details">
-                                        <h4>Social Media</h4>
-                                        <div class="social-links">
-                                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-address-card"></i>
+                    <span>Contact Information</span>
+                </div>
+                <h2>Get in Touch</h2>
+                <p>We're here to help. Reach out to us through any of the methods below or use the quick contact form for a prompt response.</p>
+            </div>
+            <div class="contact-cards-grid">
+                <!-- Quick Contact Card -->
+                <div class="contact-card highlight-card">
+                    <div class="card-icon-main">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Quick Contact</h3>
+                    <p>Have a question or need urgent legal advice? Use our quick contact form and our team will get back to you promptly.</p>
+                    <a href="#contact-form" class="cta-button primary" style="margin-top: 10px;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </a>
+                </div>
+                <!-- Visit Office Card -->
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h4>Visit Our Office</h4>
+                    <p>Legal Heart Pvt Ltd<br>Maitighar Mandala, Kathmandu, Nepal</p>
+                    <a href="#" class="direction-link">
+                        Get Directions <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <!-- Call Us Card -->
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4>Call Us</h4>
+                    <p><a href="tel:+9779800000000">+977 9800000000</a></p>
+                    <span class="availability">Available 24/7 for urgent matters</span>
+                </div>
+                <!-- Email Card -->
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <h4>Email Us</h4>
+                    <p><a href="mailto:legalheartsupport@gmail.com">legalheartsupport@gmail.com</a></p>
+                </div>
+                <!-- Office Hours Card -->
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h4>Office Hours</h4>
+                    <p>Sunday - Friday: 9:00 AM - 5:00 PM<br>Saturday (On Special Request): 11:00 AM - 3:00 PM</p>
+                </div>
+                <!-- Social Media Card -->
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h4>Social Media</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -155,7 +573,7 @@
         <div class="container">
             <div class="map-container">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.174571826202!2d85.3164163150621!3d27.708523982793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1980%3A0x93c1a8b1f8d8c8b8!2sMaitighar%20Mandala%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1620000000000!5m2!1sen!2snp" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3357.977419253464!2d85.31900207525325!3d27.693309776190567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x22d190ad9823100f%3A0x56370b868b1c1ded!2sLegal%20Heart%20Pvt%20Ltd!5e1!3m2!1sen!2snp!4v1747191556704!5m2!1sen!2snp" 
                     width="100%" 
                     height="450" 
                     style="border:0;" 
@@ -173,41 +591,57 @@
 
     <!-- Footer -->
     <footer class="footer">
+        <div class="footer-shape"></div>
+        <div class="footer-pattern"></div>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="../images/legalheartlogo.png" alt="Legal Heart Logo">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="../images/legalheartlogo.png" alt="Legal Heart Logo">
+                    </div>
                     <p>Compassionate legal support with heart</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
                 <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="practiceareas.html">Practice Areas</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h4>Follow Us</h4>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    <div class="link-group">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="practiceareas.html">Practice Areas</a></li>
+                            <li><a href="blogs.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Practice Areas</h4>
+                        <ul>
+                            <li><a href="#">Family Law</a></li>
+                            <li><a href="#">Criminal Law</a></li>
+                            <li><a href="#">Corporate Law</a></li>
+                            <li><a href="#">Immigration Law</a></li>
+                            <li><a href="#">Property Law</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="bookconsultation.html">Book Consultation</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Legal Heart. All rights reserved.</p>
-                <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Disclaimer</a>
-                </div>
-                <div class="powered-by">
-                    <p>Powered by <strong>TechPalx</strong><span class="powered-x">x</span><strong>iFiHustle</strong></p>
-                </div>
+                <p>&copy; 2024 Legal Heart. All rights reserved.</p>
+                <p class="powered-by">Powered by <a href="#">Legal Heart</a></p>
             </div>
         </div>
     </footer>

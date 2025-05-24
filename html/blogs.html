@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Client Blogs | Legal Heart</title>
+    <title>Blog - Legal Heart</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/blogs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -31,7 +31,7 @@
     </style>
 </head>
 <body>
-    <!-- Header Section (same as index.html) -->
+    <!-- Header Section -->
     <header class="header">
         <div class="container">
             <div class="logo">
@@ -44,7 +44,7 @@
                     <li class="dropdown">
                         <a href="#about">About Us <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#about">About Legal Heart</a></li>
+                            <li><a href="aboutus.html">About Legal Heart</a></li>
                             <li><a href="aboutlawyer.html">Lawyers in Legal Heart</a></li>
                         </ul>
                     </li>
@@ -57,142 +57,309 @@
         </div>
     </header>
 
-    <!-- Hero Section with Banner -->
-    <section class="hero-section">
-        <div class="hero-banner">
-            <img src="../images/heroindex.svg" alt="Legal Heart Banner" class="hero-image">
-            <div class="hero-overlay">
-                <h1>Our Blog</h1>
-                <p>Insights, experiences, and stories from our valued clients</p>
+    <!-- Hero Section -->
+    <section class="blog-hero">
+        <div class="hero-background">
+            <div class="hero-shape-1"></div>
+            <div class="hero-shape-2"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-tagline">
+                        <span class="tagline-icon"><i class="fas fa-gavel"></i></span>
+                        <span class="tagline-text">Expert Legal Insights</span>
+                    </div>
+                    <h1>Discover Legal Excellence Through Our Expert Analysis</h1>
+                    <p class="hero-subtitle">Dive into our comprehensive collection of legal insights, expert analysis, and the latest developments in law. Stay informed with our premium content curated by industry leaders.</p>
+                    <div class="hero-cta">
+                        <a href="#blog-grid" class="cta-button primary">
+                            <span class="button-text">Explore Articles</span>
+                            <span class="button-icon"><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                        <a href="contact.html" class="cta-button secondary">
+                            <span class="button-text">Schedule Consultation</span>
+                            <span class="button-icon"><i class="fas fa-calendar-alt"></i></span>
+                        </a>
+                    </div>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Expert Analysis</h4>
+                                <p>In-depth legal insights</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Latest Updates</h4>
+                                <p>Real-time legal news</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Premium Content</h4>
+                                <p>Exclusive legal resources</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <div class="hero-image">
+                            <img src="../images/blogs1.png" alt="Legal Blog">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="floating-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <span class="stat-number">500+</span>
+                                    <span class="stat-label">Articles</span>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <span class="stat-number">50k+</span>
+                                    <span class="stat-label">Readers</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="latest-article-card">
+                            <div class="card-header">
+                                <span class="card-badge">Latest</span>
+                                <span class="card-date">March 15, 2024</span>
+                            </div>
+                            <h3>Understanding Recent Changes in Family Law</h3>
+                            <p>An in-depth analysis of the latest amendments and their implications</p>
+                            <a href="#" class="read-more">
+                                Read Article
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <main class="blogs-section" style="margin-top:100px;">
+    <!-- Blog Grid Section -->
+    <section id="blog-grid" class="blog-grid-section">
         <div class="container">
-            <div class="blogs-grid">
-                <!-- Blog Card 1 -->
-                <article class="blog-card">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Blog 1">
-                    <div class="blog-content">
-                        <h3 class="blog-title">Navigating Family Law: A Personal Journey</h3>
-                        <p class="blog-desc">Discover how I overcame legal challenges in family law with the help of Legal Heart's compassionate team.</p>
-                        <div class="blog-meta">
-                            <span><i class="fas fa-user"></i> Arjun Adhikari</span>
-                            <span><i class="fas fa-calendar-alt"></i> May 12, 2024</span>
-                        </div>
-                        <a href="#" class="read-more">Read More</a>
+            <div class="section-intro">
+                <h2>Latest Articles</h2>
+                <p>Explore our collection of insightful articles and stay updated with the latest legal developments.</p>
+            </div>
+            <div class="blog-grid">
+                <!-- Featured Article -->
+                <div class="blog-card featured">
+                    <div class="card-image">
+                        <img src="../images/whychooselegalheart.svg" alt="Featured Article">
+                        <div class="category-badge">Featured</div>
                     </div>
-                </article>
-                <!-- Blog Card 2 -->
-                <article class="blog-card">
-                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Blog 2">
-                    <div class="blog-content">
-                        <h3 class="blog-title">Winning My Civil Case: Lessons Learned</h3>
-                        <p class="blog-desc">A firsthand account of the ups and downs of a civil litigation process and the support received from Legal Heart.</p>
-                        <div class="blog-meta">
-                            <span><i class="fas fa-user"></i> Krishna Prashad Subedi</span>
-                            <span><i class="fas fa-calendar-alt"></i> April 28, 2024</span>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="far fa-calendar"></i> March 15, 2024</span>
+                            <span><i class="far fa-user"></i> Sr. Adv. Krishna Prasad Subedi & Adv. Arjun Adhikari</span>
                         </div>
-                        <a href="#" class="read-more">Read More</a>
+                        <h3>Why we choose the name "Legal Heart"?</h3>
+                        <p>The reason behind choosing the name "Legal Heart" </p>
+                        <a href="blo" class="read-more-btn">
+                            Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
-                </article>
-                <!-- Blog Card 3 -->
-                <article class="blog-card">
-                    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Blog 3">
-                    <div class="blog-content">
-                        <h3 class="blog-title">Corporate Law: My Startup Story</h3>
-                        <p class="blog-desc">How Legal Heart guided my startup through the legal maze and helped us grow with confidence.</p>
-                        <div class="blog-meta">
-                            <span><i class="fas fa-user"></i> iFiHustle</span>
-                            <span><i class="fas fa-calendar-alt"></i> March 15, 2024</span>
+                </div>
+
+                <!-- Regular Articles -->
+                <div class="blog-card">
+                    <div class="card-image">
+                        <img src="../images/blogthumb.svg" alt="Business Law">
+                        <div class="category-badge">Business Law</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="far fa-calendar"></i> March 10, 2024</span>
+                            <span><i class="far fa-user"></i> Sr. Adv. Krishna Prasad Subeddi</span>
                         </div>
-                        <a href="#" class="read-more">Read More</a>
+                        <h3>Corporate Compliance in 2024</h3>
+                        <p>Essential guidelines for businesses to maintain compliance with updated regulations and avoid legal pitfalls.</p>
+                        <a href="#" class="read-more-btn">
+                            Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
-                </article>
-                <!-- Blog Card 4 -->
-                <article class="blog-card">
-                    <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=400&q=80" alt="Blog 4">
-                    <div class="blog-content">
-                        <h3 class="blog-title">Immigration Success: My New Beginning</h3>
-                        <p class="blog-desc">A story of hope and new beginnings, made possible by Legal Heart's expert immigration team.</p>
-                        <div class="blog-meta">
-                            <span><i class="fas fa-user"></i> iFiHustle</span>
-                            <span><i class="fas fa-calendar-alt"></i> February 20, 2024</span>
+                </div>
+
+                <div class="blog-card">
+                    <div class="card-image">
+                        <img src="../images/blogthumb.svg" alt="Criminal Law">
+                        <div class="category-badge">Criminal Law</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="far fa-calendar"></i> March 5, 2024</span>
+                            <span><i class="far fa-user"></i> Arjun Adhikari</span>
                         </div>
-                        <a href="#" class="read-more">Read More</a>
+                        <h3>Digital Evidence in Modern Criminal Cases</h3>
+                        <p>How digital evidence is changing the landscape of criminal defense and prosecution in the modern era.</p>
+                        <a href="#" class="read-more-btn">
+                            Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
-                </article>
-                <!-- Blog Card 5 -->
-                <article class="blog-card">
-                    <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3fdc?auto=format&fit=crop&w=400&q=80" alt="Blog 5">
-                    <div class="blog-content">
-                        <h3 class="blog-title">Property Law: Securing My Dream Home</h3>
-                        <p class="blog-desc">My experience with Legal Heart in making my dream of owning a home a reality, stress-free and secure.</p>
-                        <div class="blog-meta">
-                            <span><i class="fas fa-user"></i> iFiHustle</span>
-                            <span><i class="fas fa-calendar-alt"></i> January 10, 2024</span>
+                </div>
+
+                <div class="blog-card">
+                    <div class="card-image">
+                        <img src="../images/blogthumb.svg" alt="Property Law">
+                        <div class="category-badge">Property Law</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="far fa-calendar"></i> February 28, 2024</span>
+                            <span><i class="far fa-user"></i> iFiCode x iFiHustle</span>
                         </div>
-                        <a href="#" class="read-more">Read More</a>
+                        <h3>Real Estate Transactions: Legal Checklist</h3>
+                        <p>A comprehensive guide to the legal aspects of real estate transactions and common pitfalls to avoid.</p>
+                        <a href="#" class="read-more-btn">
+                            Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
-                </article>
-                <!-- Blog Card 6 -->
-                <article class="blog-card">
-                    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80" alt="Blog 6">
-                    <div class="blog-content">
-                        <h3 class="blog-title">Criminal Defense: Finding Justice</h3>
-                        <p class="blog-desc">A journey through the criminal justice system and how Legal Heart stood by my side every step of the way.</p>
-                        <div class="blog-meta">
-                            <span><i class="fas fa-user"></i> iFiHustle</span>
-                            <span><i class="fas fa-calendar-alt"></i> December 5, 2023</span>
-                        </div>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </article>
+                </div>
             </div>
         </div>
-    </main>
+    </section>
 
-    <!-- Footer (same as index.html) -->
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Stay updated with the latest legal insights and articles delivered directly to your inbox.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="subscribe-btn">
+                        Subscribe
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Consultation Box -->
+    <section class="premium-consultation">
+        <div class="container">
+            <div class="consultation-content">
+                <div class="consultation-text">
+                    <h2>Get Expert Legal Guidance</h2>
+                    <p>Schedule a consultation with our experienced legal team and take the first step towards resolving your legal matters.</p>
+                    <div class="consultation-features">
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>30-Minute Free Consultation</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Expert Legal Team</span>
+                    </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Confidential Discussion</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="consultation-cta">
+                    <a href="bookconsultation.html" class="premium-button">
+                        Book Your Consultation
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <p class="guarantee">100% Satisfaction Guaranteed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
+        <div class="footer-shape"></div>
+        <div class="footer-pattern"></div>
         <div class="container">
             <div class="footer-content">
+                <div class="footer-brand">
                 <div class="footer-logo">
                     <img src="../images/legalheartlogo.png" alt="Legal Heart Logo">
+                        <div class="brand-text">
+                            <h3>Legal Heart</h3>
                     <p>Compassionate legal support with heart</p>
+                        </div>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
                 <div class="footer-links">
+                    <div class="link-group">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html#home">Home</a></li>
-                        <li><a href="aboutus.html">About</a></li>
-                        <li><a href="practiceareas.html">Practice Areas</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#practice">Practice Areas</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Practice Areas</h4>
+                        <ul>
+                            <li><a href="#">Family Law</a></li>
+                            <li><a href="#">Criminal Defense</a></li>
+                            <li><a href="#">Property Law</a></li>
+                            <li><a href="#">Corporate Law</a></li>
                     </ul>
                 </div>
-                <div class="footer-social">
-                    <h4>Follow Us</h4>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
+                <div class="copyright">
                 <p>&copy; 2025 Legal Heart. All rights reserved.</p>
-                <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Disclaimer</a>
                 </div>
                 <div class="powered-by">
-                    <p>Powered by <strong>TechPalx</strong><span class="powered-x">x</span><strong>iFiHustle</strong></p>
+                    <p>Powered by <strong>iFiCode</strong><span class="powered-x">x</span><strong>iFiHustle</strong></p>
                 </div>
             </div>
         </div>
     </footer>
+
     <script src="../scripts/main.js"></script>
     <script src="../scripts/blogs.js"></script>
 </body>

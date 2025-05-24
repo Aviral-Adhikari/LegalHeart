@@ -3,32 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Legal Heart Pvt Ltd</title>
+    <title>About Us - Legal Heart</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/aboutus.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        /* Horizontal dropdown for About Us */
-        .main-nav .dropdown-menu {
-            display: flex;
-            flex-direction: row;
-            min-width: 320px;
-            justify-content: center;
-            align-items: stretch;
-            padding: 0.5rem 0;
-        }
-        .main-nav .dropdown-menu li {
-            flex: 1 1 0;
-            text-align: center;
-            margin: 0 0.5rem;
-            white-space: nowrap;
-        }
-        .main-nav .dropdown-menu li a {
-            display: block;
-            padding: 0.75rem 1.5rem;
-        }
-    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -42,10 +21,10 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">About <i class="fas fa-chevron-down"></i></a>
+                        <a href="index.html#about">About Us <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="aboutus.html" class="active">About Us</a></li>
-                            <li><a href="aboutlawyer.html" class="active">About Lawyer</a></li>
+                            <li><a href="aboutus.html">About Legal Heart</a></li>
+                            <li><a href="aboutlawyer.html">Lawyers in Legal Heart</a></li>
                         </ul>
                     </li>
                     <li><a href="practiceareas.html">Practice Areas</a></li>
@@ -58,52 +37,74 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-banner">
-            <img src="../images/heroservice.svg" alt="Legal Services" class="hero-image">
-            <div class="hero-overlay">
-                <h1>About Legal Heart</h1>
-                <p>Your Trusted Legal Partner in Nepal</p>
+    <section id="home" class="hero">
+        <div class="hero-shape"></div>
+        <div class="hero-dots"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-award"></i>
+                        Our Story
+                    </div>
+                    <h1>About Legal Heart</h1>
+                    <div class="hero-highlight">
+                        <span class="highlight-text">Trusted</span>
+                        <span class="highlight-text">Professional</span>
+                        <span class="highlight-text">Reliable</span>
+                    </div>
+                    <p class="hero-subtitle">Your trusted legal partner in Nepal</p>
+                    <p class="hero-description">Founded with a vision to provide accessible and compassionate legal services, Legal Heart has grown to become one of Nepal's most trusted law firms.</p>
+                    <div class="hero-buttons">
+                        <a href="bookconsultation.html" class="cta-button primary">
+                            <i class="fas fa-calendar-check"></i>
+                            Schedule a Consultation
+                            <span class="button-shine"></span>
+                        </a>
+                        <a href="practiceareas.html" class="cta-button secondary">
+                            <i class="fas fa-briefcase"></i>
+                            Our Services
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="fas fa-gavel"></i></div>
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Cases Won</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-image">
+                        <img src="../images/legalheartlogo.png" alt="Legal Heart Team">
+                        <div class="image-overlay"></div>
+                        <div class="image-decoration"></div>
+                </div>
+                    <div class="experience-badge">
+                        <div class="badge-icon"><i class="fas fa-star"></i></div>
+                        <div class="badge-content">
+                            <span class="years">15+</span>
+                            <span class="text">Years of Excellence</span>
             </div>
         </div>
-    </section>
-
-    <!-- Story Section -->
-    <section class="story-section">
-        <div class="container">
-            <div class="story-content">
-                <div class="story-text">
-                    <h2>Our Story</h2>
-                    <p>Founded by Senior Advocate Krishna Prashad Subedi and Advocate Arjun Adhikari, Legal Heart has grown from a small practice to one of Nepal's most respected law firms. Our journey is marked by a commitment to excellence, integrity, and client success.</p>
-                    <p>We believe in the power of justice and the importance of accessible legal services. Every case we handle is approached with the same dedication and attention to detail, regardless of its size or complexity.</p>
-                </div>
-                <div class="story-image">
-                    <img src="../images/legalheartlogo.png" alt="Legal Heart Office">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team-section">
-        <div class="container">
-            <h2>Meet Our Leadership</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="../images/krishna.jpg" alt="Senior Advocate Krishna Prashad Subedi">
+                    <div class="trust-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Trusted by 1000+ Clients</span>
                     </div>
-                    <h3>Senior Advocate Krishna Prashad Subedi</h3>
-                    <p class="member-role">Founding Partner</p>
-                    <p class="member-bio">With over 20 years of experience in constitutional and corporate law, Krishna leads our firm with wisdom and vision.</p>
-                </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="../images/arjun.jpg" alt="Advocate Arjun Adhikari">
+                    <div class="success-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>98% Success Rate</span>
                     </div>
-                    <h3>Advocate Arjun Adhikari</h3>
-                    <p class="member-role">Founding Partner</p>
-                    <p class="member-bio">Specializing in civil litigation and family law, Arjun brings compassion and expertise to every case.</p>
                 </div>
             </div>
         </div>
@@ -112,27 +113,94 @@
     <!-- Values Section -->
     <section class="values-section">
         <div class="container">
-            <h2>Our Core Values</h2>
+            <div class="section-header">
+                <span class="section-badge">Our Values</span>
+                <h2>What Sets Us Apart</h2>
+                <p>Our core principles guide everything we do</p>
+            </div>
             <div class="values-grid">
                 <div class="value-card">
-                    <i class="fas fa-balance-scale"></i>
-                    <h3>Integrity</h3>
-                    <p>We uphold the highest ethical standards in all our dealings.</p>
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <div class="value-content">
+                        <h3>Compassion</h3>
+                        <p>We understand your unique situation and provide personalized care</p>
+                        <div class="value-decoration"></div>
+                    </div>
+                    <div class="value-hover-effect"></div>
                 </div>
                 <div class="value-card">
-                    <i class="fas fa-users"></i>
-                    <h3>Client Focus</h3>
-                    <p>Your success is our priority. We're committed to understanding your needs.</p>
+                    <div class="value-icon">
+                        <i class="fas fa-balance-scale"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <div class="value-content">
+                        <h3>Justice</h3>
+                        <p>Fighting for your rights with unwavering dedication</p>
+                        <div class="value-decoration"></div>
+                    </div>
+                    <div class="value-hover-effect"></div>
                 </div>
                 <div class="value-card">
-                    <i class="fas fa-gavel"></i>
+                    <div class="value-icon">
+                        <i class="fas fa-star"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <div class="value-content">
                     <h3>Excellence</h3>
-                    <p>We strive for excellence in every aspect of our legal practice.</p>
+                        <p>Delivering the highest quality legal service</p>
+                        <div class="value-decoration"></div>
+                    </div>
+                    <div class="value-hover-effect"></div>
                 </div>
-                <div class="value-card">
-                    <i class="fas fa-heart"></i>
-                    <h3>Compassion</h3>
-                    <p>We approach every case with empathy and understanding.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Leadership</span>
+                <h2>Meet Our Founding Partners</h2>
+                <p>Experienced professionals dedicated to your legal success</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="../images/arjun.jpeg" alt="Advocate Arjun Adhikari">
+                        <div class="team-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Advocate Arjun Adhikari</h3>
+                        <p class="position">Founding Partner</p>
+                        <p class="bio">Specializing in family and corporate law with over 15 years of experience.</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="../images/krishna.jpg" alt="Advocate Krishna">
+                        <div class="team-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Senior Advocate Krishna Prasad Subedi</h3>
+                        <p class="position">Founding Partner</p>
+                        <p class="bio">Expert in criminal defense and immigration law with a decade of experience.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,53 +209,69 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
+            <div class="cta-content">
             <h2>Ready to Get Started?</h2>
-            <p>Let's discuss how we can help you with your legal needs.</p>
-            <a href="bookconsultation.html" class="cta-button">Schedule a Consultation</a>
+                <p>Schedule a free consultation with our legal experts</p>
+                <a href="bookconsultation.html" class="cta-button">Book Consultation</a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
+        <div class="footer-shape"></div>
+        <div class="footer-pattern"></div>
         <div class="container">
             <div class="footer-content">
+                <div class="footer-brand">
                 <div class="footer-logo">
                     <img src="../images/legalheartlogo.png" alt="Legal Heart Logo">
+                    </div>
                     <p>Compassionate legal support with heart</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
                 <div class="footer-links">
+                    <div class="link-group">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="aboutus.html">About</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
                         <li><a href="practiceareas.html">Practice Areas</a></li>
+                            <li><a href="blogs.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-social">
-                    <h4>Follow Us</h4>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    <div class="link-group">
+                        <h4>Practice Areas</h4>
+                        <ul>
+                            <li><a href="#">Family Law</a></li>
+                            <li><a href="#">Criminal Law</a></li>
+                            <li><a href="#">Corporate Law</a></li>
+                            <li><a href="#">Immigration Law</a></li>
+                            <li><a href="#">Property Law</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="bookconsultation.html">Book Consultation</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Legal Heart. All rights reserved.</p>
-                <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Disclaimer</a>
-                </div>
-                <div class="powered-by">
-                    <p>Powered by <strong>TechPalx</strong><span class="powered-x">x</span><strong>iFiHustle</strong></p>
-                </div>
+                <p>&copy; 2024 Legal Heart. All rights reserved.</p>
+                <p class="powered-by">Powered by <a href="#">Legal Heart</a></p>
             </div>
         </div>
     </footer>
-
-    <script src="../scripts/main.js"></script>
 </body>
 </html> 
